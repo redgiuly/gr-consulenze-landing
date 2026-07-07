@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frasi d'effetto | GR Consulenze</title>
+  <meta name="description" content="Una raccolta di frasi d'effetto per presentare una consulente di informatica e formazione con tono chiaro, professionale e autorevole." />
+  <style>
+    :root {
+      --bg: #f6f8fc;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --primary: #1d4ed8;
+      --primary-dark: #1e3a8a;
+      --accent: #dbeafe;
+      --border: #e5e7eb;
+      --shadow: 0 18px 50px rgba(29, 78, 216, 0.12);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, #f8fbff 0%, #eef4ff 100%);
+      line-height: 1.6;
+    }
+
+    .container {
+      width: min(1100px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    header, footer { padding: 24px 0; }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+    }
+
+    .nav {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .nav a, .btn {
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .nav a { color: var(--primary-dark); }
+
+    .hero {
+      padding: 34px 0 16px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: var(--primary-dark);
+      font-size: 0.92rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      line-height: 1.08;
+      margin: 0 0 18px;
+    }
+
+    .lead {
+      font-size: 1.08rem;
+      color: var(--muted);
+      max-width: 70ch;
+      margin: 0 0 24px;
+    }
+
+    .btn-row {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 20px;
+      border-radius: 12px;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+      box-shadow: var(--shadow);
+    }
+
+    .btn-secondary {
+      background: #fff;
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    section { padding: 20px 0 34px; }
+
+    .section-title {
+      font-size: 1.8rem;
+      margin: 0 0 10px;
+    }
+
+    .section-copy {
+      margin: 0 0 24px;
+      color: var(--muted);
+      max-width: 72ch;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid rgba(229, 231, 235, 0.9);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+      padding: 24px;
+    }
+
+    .quote {
+      font-size: 1.22rem;
+      font-weight: 700;
+      margin: 0 0 12px;
+      color: var(--primary-dark);
+    }
+
+    .use {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .highlight {
+      background: #ffffff;
+      border-left: 6px solid var(--primary);
+      padding: 22px;
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    ul.checks {
+      margin: 16px 0 0;
+      padding-left: 18px;
+      color: var(--muted);
+    }
+
+    footer {
+      color: var(--muted);
+      font-size: 0.95rem;
+      text-align: center;
+      padding-bottom: 42px;
+    }
+
+    @media (max-width: 860px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container topbar">
+      <div class="brand">GR Consulenze • Informatica e Formazione</div>
+      <nav class="nav" aria-label="Navigazione principale">
+        <a href="index.html">Home</a>
+        <a href="contatti.html">Contatti</a>
+        <a href="finito.html">Finito!!!!</a>
+        <a href="https://www.grconsulenze.it">Sito principale</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="badge">Nuova pagina aggiunta al sito demo</div>
+        <h1>Frasi d'effetto per una consulente di informatica e formazione</h1>
+        <p class="lead">
+          Una raccolta di formule brevi, chiare e professionali da usare in una landing page,
+          in una presentazione, in un profilo social o in una pagina servizi.
+        </p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="contatti.html">Richiedi un contatto</a>
+          <a class="btn btn-secondary" href="#frasi">Leggi le frasi</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container highlight">
+        <strong>Idea guida:</strong> il valore non è solo nella tecnologia, ma nella capacità di renderla comprensibile, utile e sostenibile per le persone e per le organizzazioni.
+      </div>
+    </section>
+
+    <section id="frasi">
+      <div class="container">
+        <h2 class="section-title">Selezione di frasi d'effetto</h2>
+        <p class="section-copy">
+          Le frasi qui sotto sono pensate per comunicare competenza, concretezza e visione.
+          Possono essere usate così come sono oppure adattate al tono definitivo di GR Consulenze.
+        </p>
+        <div class="grid">
+          <article class="card">
+            <p class="quote">La tecnologia ha valore solo quando diventa chiara, accessibile e utile.</p>
+            <p class="use">Ideale per home page, presentazioni istituzionali e apertura della landing.</p>
+          </article>
+          <article class="card">
+            <p class="quote">Trasformo strumenti complessi in soluzioni comprensibili e applicabili.</p>
+            <p class="use">Perfetta per descrivere il taglio pratico della consulenza.</p>
+          </article>
+          <article class="card">
+            <p class="quote">Ogni innovazione funziona davvero solo se le persone la possono capire e usare.</p>
+            <p class="use">Utile per collegare consulenza digitale e formazione.</p>
+          </article>
+          <article class="card">
+            <p class="quote">Strategia, contenuti e tecnologia devono parlare la stessa lingua.</p>
+            <p class="use">Adatta a pagine servizi, UX/UI e progettazione digitale.</p>
+          </article>
+          <article class="card">
+            <p class="quote">Formazione e consulenza non servono ad aggiungere complessità, ma a creare autonomia.</p>
+            <p class="use">Buona per bio professionale e presentazione personale.</p>
+          </article>
+          <article class="card">
+            <p class="quote">Accompagno persone e organizzazioni a prendere decisioni digitali più consapevoli.</p>
+            <p class="use">Formula chiara e istituzionale per il posizionamento.</p>
+          </article>
+          <article class="card">
+            <p class="quote">Dalla visione alla pratica: idee digitali che diventano percorsi concreti.</p>
+            <p class="use">Ottima per call to action e chiusure persuasive.</p>
+          </article>
+          <article class="card">
+            <p class="quote">L'innovazione migliore è quella che semplifica, orienta e fa crescere competenze.</p>
+            <p class="use">Indicata per progetti di formazione e cambiamento organizzativo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="section-title">Come puoi usarle</h2>
+        <p class="section-copy">
+          Questa pagina può diventare una base per costruire messaggi più definitivi su sito, landing, brochure o blog.
+        </p>
+        <div class="card">
+          <ul class="checks">
+            <li>come frase iniziale nella home del sito</li>
+            <li>come sottotitolo in una pagina servizi</li>
+            <li>come testo di apertura in una pagina “Chi sono”</li>
+            <li>come bio breve per social o profili professionali</li>
+            <li>come messaggio guida per campagne e pagine Vercel</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    GR Consulenze • Pagina demo con frasi d'effetto per consulenza informatica e formazione
+  </footer>
+</body>
+</html>
