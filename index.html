@@ -3,19 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Consulente Digitale | Landing Page Demo</title>
+  <title>GR Consulenze | Informatica e Formazione</title>
+  <meta name="description" content="GR Consulenze supporta professionisti e organizzazioni con consulenza digitale, formazione, UX/UI, programmazione e intelligenza artificiale." />
   <style>
     :root {
       --bg: #f6f8fc;
       --card: #ffffff;
       --text: #1f2937;
       --muted: #6b7280;
-      --primary: #2563eb;
-      --primary-dark: #1d4ed8;
+      --primary: #1d4ed8;
+      --primary-dark: #1e3a8a;
       --accent: #dbeafe;
       --border: #e5e7eb;
       --success: #0f766e;
-      --shadow: 0 18px 50px rgba(37, 99, 235, 0.12);
+      --shadow: 0 18px 50px rgba(29, 78, 216, 0.12);
     }
 
     * { box-sizing: border-box; }
@@ -24,31 +25,27 @@
       font-family: Arial, Helvetica, sans-serif;
       color: var(--text);
       background: linear-gradient(180deg, #f8fbff 0%, #eef4ff 100%);
-      line-height: 1.5;
+      line-height: 1.55;
     }
 
     .container {
-      width: min(1100px, calc(100% - 32px));
+      width: min(1120px, calc(100% - 32px));
       margin: 0 auto;
     }
 
-    header {
-      padding: 22px 0;
-    }
+    header { padding: 22px 0; }
 
     .brand {
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       font-weight: 700;
       color: var(--primary-dark);
     }
 
-    .hero {
-      padding: 42px 0 56px;
-    }
+    .hero { padding: 42px 0 56px; }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
+      grid-template-columns: 1.15fr 0.85fr;
       gap: 28px;
       align-items: center;
     }
@@ -65,15 +62,15 @@
     }
 
     h1 {
-      font-size: clamp(2rem, 5vw, 3.6rem);
-      line-height: 1.1;
+      font-size: clamp(2.1rem, 5vw, 3.7rem);
+      line-height: 1.08;
       margin: 0 0 18px;
     }
 
     .lead {
       font-size: 1.08rem;
       color: var(--muted);
-      max-width: 60ch;
+      max-width: 62ch;
       margin: 0 0 26px;
     }
 
@@ -114,15 +111,8 @@
       box-shadow: var(--shadow);
     }
 
-    .hero-card {
-      padding: 26px;
-    }
-
-    .hero-card h2 {
-      margin-top: 0;
-      margin-bottom: 10px;
-      font-size: 1.3rem;
-    }
+    .hero-card { padding: 26px; }
+    .hero-card h2, .card h3 { margin-top: 0; }
 
     .mini-list {
       list-style: none;
@@ -137,9 +127,7 @@
 
     .mini-list li:last-child { border-bottom: 0; }
 
-    section {
-      padding: 22px 0 48px;
-    }
+    section { padding: 22px 0 48px; }
 
     .section-title {
       font-size: 1.8rem;
@@ -149,29 +137,16 @@
     .section-copy {
       margin: 0 0 24px;
       color: var(--muted);
-      max-width: 60ch;
+      max-width: 68ch;
     }
 
-    .grid-3 {
+    .grid-3, .steps {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 18px;
     }
 
-    .card {
-      padding: 22px;
-    }
-
-    .card h3 {
-      margin-top: 0;
-      margin-bottom: 10px;
-    }
-
-    .steps {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
+    .card { padding: 22px; }
 
     .step-number {
       width: 38px;
@@ -192,9 +167,7 @@
       align-items: stretch;
     }
 
-    .contact-box {
-      padding: 26px;
-    }
+    .contact-box { padding: 26px; }
 
     .contact-list {
       padding-left: 18px;
@@ -226,16 +199,20 @@
         grid-template-columns: 1fr;
       }
 
-      .hero {
-        padding-top: 20px;
-      }
+      .hero { padding-top: 20px; }
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="container">
-      <div class="brand">Consulente Digitale • Demo Landing Page</div>
+    <div class="container" style="display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap;">
+      <div class="brand">GR Consulenze • Informatica e Formazione</div>
+      <nav aria-label="Navigazione principale" style="display:flex; gap:16px; flex-wrap:wrap;">
+        <a href="#servizi" style="text-decoration:none; color:var(--text); font-weight:700;">Servizi</a>
+        <a href="#contatti" style="text-decoration:none; color:var(--text); font-weight:700;">Contatti rapidi</a>
+        <a href="contatti.html" style="text-decoration:none; color:var(--primary-dark); font-weight:700;">Pagina contatti</a>
+        <a href="finito.html" style="text-decoration:none; color:var(--primary-dark); font-weight:700;">Finito!!!!</a>
+      </nav>
     </div>
   </header>
 
@@ -243,26 +220,29 @@
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <div class="badge">Pagina semplice per provare la piattaforma</div>
-          <h1>Aiuto professionisti e piccole organizzazioni a fare chiarezza nel digitale.</h1>
+          <div class="badge">Landing essenziale collegata all'identità di GR Consulenze</div>
+          <h1>Tecnologia che semplifica, formazione che valorizza.</h1>
           <p class="lead">
-            Analizzo bisogni, strumenti e priorità per trasformare confusione e dispersione in un piano concreto:
-            più ordine, più efficacia, meno tempo perso.
+            Supporto aziende, professionisti e organizzazioni nel prendere decisioni informate,
+            definire strategie digitali efficaci e trasformare il cambiamento in valore reale.
           </p>
           <div class="cta-row">
-            <a class="btn btn-primary" href="#contatti">Prenota una call</a>
+            <a class="btn btn-primary" href="#contatti">Richiedi un primo contatto</a>
             <a class="btn btn-secondary" href="#servizi">Scopri i servizi</a>
           </div>
-          <p class="lead">Ideale per una prima presenza online chiara, semplice e credibile.</p>
+          <p class="lead">
+            Questa pagina può affiancare il sito principale <strong>www.grconsulenze.it</strong> come landing semplice,
+            più diretta e pronta per prove, campagne o presentazioni mirate.
+          </p>
         </div>
 
         <aside class="hero-card">
-          <h2>In cosa posso aiutarti</h2>
+          <h2>Ambiti di intervento</h2>
           <ul class="mini-list">
-            <li>Definizione della strategia digitale</li>
-            <li>Scelta di strumenti e processi più adatti</li>
-            <li>Supporto su organizzazione, contenuti e presenza online</li>
-            <li>Formazione pratica per lavorare meglio ogni giorno</li>
+            <li>Consulenza digitale costruita sul contesto reale di chi la richiede</li>
+            <li>Formazione personalizzata per aumentare autonomia e competenza</li>
+            <li>UX/UI, progettazione multimediale e organizzazione di contenuti e servizi</li>
+            <li>Programmazione, IA e tecnologie emergenti usate con approccio concreto</li>
           </ul>
         </aside>
       </div>
@@ -271,19 +251,22 @@
     <section id="servizi">
       <div class="container">
         <h2 class="section-title">Servizi principali</h2>
-        <p class="section-copy">Questa sezione mostra in modo essenziale come un consulente può presentare l'offerta in una landing page.</p>
+        <p class="section-copy">
+          Ogni percorso nasce dall'ascolto delle persone e dalla comprensione del contesto.
+          L'obiettivo non è aggiungere complessità, ma trovare soluzioni utili, comprensibili e davvero applicabili.
+        </p>
         <div class="grid-3">
           <article class="card">
             <h3>Consulenza strategica</h3>
-            <p>Analisi della situazione attuale, definizione degli obiettivi e costruzione di un piano d'azione semplice e realistico.</p>
+            <p>Analisi della situazione attuale, definizione delle priorità e supporto alle decisioni digitali con attenzione a sostenibilità, tempi e persone coinvolte.</p>
           </article>
           <article class="card">
-            <h3>Organizzazione digitale</h3>
-            <p>Scelta e ottimizzazione di strumenti, flussi di lavoro e priorità per ridurre il caos operativo.</p>
+            <h3>Formazione su misura</h3>
+            <p>Percorsi personalizzati per professionisti, team e organizzazioni che vogliono usare meglio strumenti digitali, contenuti, processi e intelligenza artificiale.</p>
           </article>
           <article class="card">
-            <h3>Formazione pratica</h3>
-            <p>Sessioni formative pensate per rendere autonomi professionisti e team nell'uso di strumenti digitali e IA.</p>
+            <h3>Progetti digitali</h3>
+            <p>UX/UI, progettazione multimediale, programmazione, mondi virtuali e sperimentazione di soluzioni digitali con un taglio pratico e orientato all'uso.</p>
           </article>
         </div>
       </div>
@@ -291,23 +274,23 @@
 
     <section>
       <div class="container">
-        <h2 class="section-title">Come funziona</h2>
-        <p class="section-copy">Un percorso breve in tre passaggi, facile da capire anche per chi arriva per la prima volta sul sito.</p>
+        <h2 class="section-title">Come lavora GR Consulenze</h2>
+        <p class="section-copy">Un metodo chiaro, progressivo e comprensibile anche per chi non parte da una base tecnica.</p>
         <div class="steps">
           <article class="card">
             <div class="step-number">1</div>
-            <h3>Ascolto</h3>
-            <p>Raccogliamo bisogni, obiettivi e problemi concreti da risolvere.</p>
+            <h3>Ascolto e analisi</h3>
+            <p>Si parte dai bisogni reali, dal contesto e dagli obiettivi per evitare soluzioni standard poco utili.</p>
           </article>
           <article class="card">
             <div class="step-number">2</div>
-            <h3>Proposta</h3>
-            <p>Definiamo priorità, strumenti e azioni adatte alla tua situazione reale.</p>
+            <h3>Proposta su misura</h3>
+            <p>Vengono definite priorità, strumenti e attività in modo chiaro, sostenibile e coerente con le risorse disponibili.</p>
           </article>
           <article class="card">
             <div class="step-number">3</div>
-            <h3>Implementazione</h3>
-            <p>Ti accompagno nella messa a terra delle soluzioni, con supporto operativo e formativo.</p>
+            <h3>Affiancamento operativo</h3>
+            <p>La consulenza può essere accompagnata da formazione, supporto pratico e revisione progressiva dei risultati.</p>
           </article>
         </div>
       </div>
@@ -317,22 +300,22 @@
       <div class="container contact">
         <div class="card contact-box">
           <h2 class="section-title">Contatti</h2>
-          <p class="section-copy">Puoi sostituire questi dati con quelli reali del consulente oppure collegare un modulo di contatto.</p>
+          <p class="section-copy">Contatti base pronti da usare ora, in attesa di eventuali riferimenti definitivi o di un modulo dedicato.</p>
           <ul class="contact-list">
-            <li>Email: consulente@example.com</li>
-            <li>Telefono: +39 000 000 0000</li>
-            <li>Disponibilità: call introduttiva di 30 minuti</li>
+            <li>Email: gr.posta@gmail.com</li>
+            <li>Sito principale: <a href="https://www.grconsulenze.it">www.grconsulenze.it</a></li>
+            <li>Focus: consulenza digitale, formazione, UX/UI, programmazione, IA</li>
           </ul>
         </div>
         <div class="highlight">
-          Demo pronta: la pagina è volutamente semplice, veloce da leggere e facile da adattare per una prova o una prima presentazione online.
+          Pagina aggiornata per funzionare come landing autonoma ma coerente con il sito principale: messaggio più chiaro, servizi allineati e tono vicino a GR Consulenze.
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    Demo realizzata per test della piattaforma • Modificabile facilmente con testi, colori e contatti reali
+    GR Consulenze • Landing page essenziale pronta da adattare con contenuti, contatti e call to action definitive
   </footer>
 </body>
 </html>

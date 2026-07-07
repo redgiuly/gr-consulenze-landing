@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contatti | GR Consulenze</title>
+  <meta name="description" content="Contatti di GR Consulenze: primo confronto, richiesta informazioni e riferimenti principali." />
+  <style>
+    :root {
+      --bg: #f6f8fc;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --primary: #1d4ed8;
+      --primary-dark: #1e3a8a;
+      --accent: #dbeafe;
+      --border: #e5e7eb;
+      --shadow: 0 18px 50px rgba(29, 78, 216, 0.12);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, #f8fbff 0%, #eef4ff 100%);
+      line-height: 1.6;
+    }
+
+    .container {
+      width: min(1080px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    header, footer { padding: 24px 0; }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+    }
+
+    .nav {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .nav a, .link {
+      text-decoration: none;
+      font-weight: 700;
+      color: var(--primary-dark);
+    }
+
+    .hero {
+      padding: 32px 0 22px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: var(--primary-dark);
+      font-size: 0.92rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      line-height: 1.08;
+      margin: 0 0 16px;
+    }
+
+    .lead {
+      color: var(--muted);
+      max-width: 70ch;
+      margin: 0 0 18px;
+      font-size: 1.06rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 20px;
+      padding: 14px 0 42px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid rgba(229, 231, 235, 0.9);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+      padding: 24px;
+    }
+
+    .card h2, .card h3 {
+      margin-top: 0;
+    }
+
+    .contact-list {
+      list-style: none;
+      padding: 0;
+      margin: 18px 0 0;
+    }
+
+    .contact-list li {
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .contact-list li:last-child {
+      border-bottom: 0;
+    }
+
+    .small {
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .cta {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 14px 20px;
+      border-radius: 12px;
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow: var(--shadow);
+    }
+
+    .note {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 16px;
+      padding: 18px;
+      color: var(--primary-dark);
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+      padding-bottom: 48px;
+    }
+
+    @media (max-width: 860px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container topbar">
+      <div class="brand">GR Consulenze • Informatica e Formazione</div>
+      <nav class="nav" aria-label="Navigazione principale">
+        <a href="index.html">Home</a>
+        <a href="index.html#servizi">Servizi</a>
+        <a href="https://www.grconsulenze.it">Sito principale</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="badge">Pagina contatti aggiunta alla demo</div>
+        <h1>Parliamo del tuo progetto digitale o formativo</h1>
+        <p class="lead">
+          Questa pagina contatti è pensata come base semplice da pubblicare subito e rifinire poi con riferimenti completi,
+          form, indirizzo, social o informazioni commerciali più dettagliate.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container grid">
+        <article class="card">
+          <h2>Contatti principali</h2>
+          <p class="small">Riferimenti attualmente disponibili e coerenti con i materiali già usati nella landing.</p>
+          <ul class="contact-list">
+            <li><strong>Email</strong><br />gr.posta@gmail.com</li>
+            <li><strong>Sito web</strong><br /><a class="link" href="https://www.grconsulenze.it">www.grconsulenze.it</a></li>
+            <li><strong>Ambiti</strong><br />Consulenza digitale, formazione, UX/UI, programmazione, IA, mondi virtuali</li>
+          </ul>
+          <a class="cta" href="mailto:gr.posta@gmail.com">Scrivi una email</a>
+        </article>
+
+        <aside class="card">
+          <h3>Quando può essere utile contattare GR Consulenze</h3>
+          <ul class="contact-list">
+            <li>Per chiarire un'idea progettuale prima di investire tempo e risorse</li>
+            <li>Per organizzare un intervento formativo per professionisti, gruppi o organizzazioni</li>
+            <li>Per migliorare processi, contenuti, presenza online o strumenti digitali</li>
+            <li>Per confrontarsi su UX/UI, programmazione o uso concreto dell'intelligenza artificiale</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="note">
+          Prossimo miglioramento consigliato: aggiungere un vero modulo contatti, recapiti completi, una sezione “Chi siamo” più approfondita e collegamenti ai contenuti del blog.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    GR Consulenze • Pagina contatti demo pronta da estendere e collegare al sito principale
+  </footer>
+</body>
+</html>
